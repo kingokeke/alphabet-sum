@@ -11,6 +11,7 @@ function checkInput(value) {
 
 function reset() {
   if (document.querySelector(`#count-output`)) document.querySelector(`#count-output`).remove();
+  if (document.querySelector(`#word-output`)) document.querySelector(`#word-output`).remove();
 }
 
 function sumOfLetters(event) {
@@ -41,6 +42,7 @@ function sumOfLetters(event) {
         countOutput.setAttribute('id', 'count-output');
         countOutput.innerText = result.count;
 
+        wordOutput.setAttribute('id', 'word-output');
         result.words.forEach(word => {
           const wordItem = document.createElement('li');
           wordItem.classList.add('words');
