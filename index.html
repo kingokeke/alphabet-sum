@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Document</title>
-        <style>
-            body {
-                line-height: 1.5;
-                font-size: 20px;
-            }
-            .bold {
-                font-weight: 900;
-            }            
-            .underline {
-                text-decoration: underline;
-            }
-        </style>
-        <script defer src="sumtohundred.js"></script>
-    </head>
-    <body>
-        <div id="app">
-            <h3>Words in the English Dictionary that sum up to 100</h3>
-            <p>The English Dictionary used is very kindly provided by <a
-                    href="https://github.com/dwyl/english-words/blob/master/words_dictionary.json"
-                    target="_blank">"https://github.com/dwyl/english-words"</a>.<br>
-                Please be patient. The dictionary might take a little while to
-                load and parse. It is about 5mb in size. Thank you.</p>
-            <br><br>
-        </div>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sum of Letters</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div id="site-container">
+      <div id="site-content">
+        <header><h1>Sum of letters in a word</h1></header>
+        <main>
+          <p>This app finds the number of words in the English dictionary whose sum of letters add up to a particular number. For example </p>
+          <p>
+            The English Dictionary used is very kindly provided by
+            <a href="https://github.com/dwyl/english-words/blob/master/words_dictionary.json" target="_blank">"https://github.com/dwyl/english-words"</a>.
+          </p>
+          <form action="">
+            <label for="sum-input"></label>
+            <input type="text" id="sum-input" placeholder="Sum of letters of the word">
+            <button id="check-button">Check</button>
+            <button id="reset-button" type="reset">Reset</button>
+          </form>
+        </main>
+        <footer>
+            <p>
+                Copyright &copy;
+                <span class="current-year">2019</span>
+                <a href="https://www.github.com/kingokeke" target="_blank">
+                  Kingsley Okeke.
+                </a>
+                All rights reserved.
+              </p>
+        </footer>
+      </div>
+    </div>     
+    </div>
+  </body>
 </html>
