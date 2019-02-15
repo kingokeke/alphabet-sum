@@ -1,21 +1,113 @@
 :root {
   font-family: sans-serif;
+  --reset-color: rgb(240, 35, 35);
+  --check-color: rgb(18, 155, 6);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e2eaebd5;
+}
+
+h1,
+h2 {
+  text-align: center;
+  letter-spacing: 1px;
+  font-variant: small-caps;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0px 50px;
+  text-align: justify;
+}
+
+form {
+  width: 100%;
+  display: block;
+  padding: 20px 0px 100px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 50px auto;
+  background-color: rgba(230, 230, 230, 0.5);
+}
+
+form h2 {
+  padding-bottom: 20px;
+}
+
+form input[type='text'] {
+  padding: 10px;
+  width: 250px;
+  border-radius: 3px;
+  border: 1px solid #bbb;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+button {
+  padding: 11px 20px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 1.025rem;
+}
+
+#reset-button {
+  background-color: var(--reset-color);
+  color: white;
+  border-color: var(--reset-color);
+}
+
+#check-button {
+  background-color: var(--check-color);
+  color: white;
+  border-color: var(--check-color);
 }
 
 footer p {
   position: fixed;
-  bottom: 0;
-  margin: 0;
-  text-align: center;
   display: block;
   background-color: #ccc;
   width: 100%;
   left: 0;
+  bottom: 0;
   font-weight: bold;
-  padding: 3px;
+  padding: 5px 0px;
   font-size: 0.75rem;
+  text-align: center;
+  margin-bottom: 0;
 }
 
 footer p a {
   text-decoration: none;
+}
+
+code,
+kbd,
+pre {
+  background-color: #eee;
+  padding: 0px 10px;
+  margin: 3px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  font-size: 1.1rem;
+  display: inline;
+}
+
+#error-output {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--reset-color);
+}
+
+.credits {
+  font-weight: bold;
+  padding-top: 20px;
+  font-style: italic;
 }
