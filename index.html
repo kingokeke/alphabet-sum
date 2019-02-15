@@ -13,14 +13,22 @@
       <div id="site-content">
         <header><h1>Sum of letters in a word</h1></header>
         <main>
-          <p>This app finds the number of words in the English dictionary whose sum of letters add up to a particular number. For example </p>
-          <p>
-            The English Dictionary used is very kindly provided by
+          <p>This app finds the number of words in the English dictionary whose sum of letters add up to a particular number.</p>
+          <p>In other words, let us assume that all the letters in the English aplhabet were represented by numbers that indicate their position in the alphabet (i.e. <pre>a = 1</pre>, <pre>b = 2</pre>, <pre>c = 3</pre>, and so on up to <pre>z = 26</pre> ). For a word like "Able", we would have:
+          <ul>
+            <li>"Able" = <pre>A</pre> + <pre>b</pre> + <pre>l</pre> + <pre>e</pre> = 1 + 2 + 12 + 5 = 20</li>
+          </ul></p>
+          <br>
+          <p>Therefore if you type "20" into the form field below, the app will find all words in the English language that sum up to 20, with the word "Able" included!!! Don't believe me? Go on... Try it!</p>
+
+          <p class="credits">
+            Credits: The English Dictionary used for this app is very kindly provided by
             <a href="https://github.com/dwyl/english-words/blob/master/words_dictionary.json" target="_blank">"https://github.com/dwyl/english-words"</a>.
           </p>
           <form action="">
+            <h2>Type a number</h2>
             <label for="sum-input"></label>
-            <input type="text" id="sum-input" placeholder="Sum of letters of the word">
+            <input type="text" id="sum-input" placeholder="Enter number here">
             <button id="check-button">Check</button>
             <button id="reset-button" type="reset">Reset</button>
           </form>
